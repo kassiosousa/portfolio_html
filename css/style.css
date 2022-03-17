@@ -1,0 +1,75 @@
+/* Estilo base */
+@font-face { font-family: 'MerriweatherSans'; src: url('fonts/MerriweatherSans-Regular.ttf'); }
+@font-face { font-family: 'MerriweatherSans-Bold'; src: url('fonts/MerriweatherSans-Bold.ttf'); }
+@font-face { font-family: 'MerriweatherSans-ExtraBold'; src: url('fonts/MerriweatherSans-ExtraBold.ttf'); }
+@font-face { font-family: 'MerriweatherSans-Italic'; src: url('fonts/MerriweatherSans-Italic.ttf'); }
+@font-face { font-family: 'MerriweatherSans-Light'; src: url('fonts/MerriweatherSans-Light.ttf'); }
+@font-face { font-family: 'MerriweatherSans-Medium'; src: url('fonts/MerriweatherSans-Medium.ttf'); }
+@font-face { font-family: 'MerriweatherSans-SemiBold'; src: url('fonts/MerriweatherSans-SemiBold.ttf'); }
+
+body {
+  background-color: #22212C;
+  color: #f2f2f2;
+  font-family: MerriweatherSans;
+}
+h1, h2, h3, h4, h5 { font-family: MerriweatherSans; }
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+/* Mobile-First Properties */
+
+/* Flexbox properties */
+.container {
+  display: flex;
+  border: 1px red dashed;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly;  */
+  gap: 5px;
+}
+.container div {
+  flex-basis: auto;
+  border: 1px solid #fff;
+}
+
+.container div:nth-child(1){
+  width: 20%;
+}
+.container div:nth-child(2){
+  flex-grow: 1;
+}
+.container div:nth-child(3){
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+/* .sidebar {
+  flex-basis: 0;
+  border: 1px #fff solid;
+}
+.sidebar .card:nth-child(1) {
+  width: 1000px;
+}
+.content {
+  flex-basis: auto;
+  border: 1px #fff solid;
+}
+.content .card {
+  border: 1px #fff solid;
+}
+.footer {
+  flex-basis: auto;
+  justify-content: center;
+  text-align: center;
+  border: 1px #fff solid;
+} */
+
+
+
+/* .item:nth-child(1) {
+  order: 1;
+} */
