@@ -12,11 +12,17 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #22212C;
-  color: #f2f2f2;
+  color: #aca9bb;
   font-family: MerriweatherSans;
   margin: 0;
 }
+a {
+  color: #aca9bb;
+  text-decoration: none;
+}
+/* ================================================================================================ */
 /* Mobile-First Properties */
+/* ================================================================================================ */
 
 /* SIDEBAR */
 sidebar {
@@ -26,17 +32,21 @@ sidebar {
   justify-content: center;
   align-items: center;
 }
-/* PROFILE */
-sidebar .card:nth-child(1){
-  flex: 0 200px;
-}
-.profile {
+sidebar .card {
   background: #302F3D;
   border-radius: 20px;
   width: 250px;
-  margin: 15px;
+  margin: 5px;
+  margin-top: 10px;
   text-align: center;
   box-shadow: 10px 5px 5px #00000054;
+}
+sidebar .card:nth-child(1) {
+  margin-top: 20px;
+}
+/* PROFILE */
+sidebar .card:nth-child(1){
+  flex: 1;
 }
 .profile img {
   width: 150px;
@@ -45,19 +55,52 @@ sidebar .card:nth-child(1){
   margin-top: 10px;
 }
 .profile h3 {
-  color: #837E9F;
+  color: #aca9bb;
 }
 .profile h5 {
   font-family: MerriweatherSans-Light;
-  color: #837E9F;
+  color: #aca9bb;
+}
+/* SOCIAL */
+sidebar .card:nth-child(2){
+  flex: 1;
+}
+.social .icon {
+  filter: invert(80%) brightness(119%) contrast(119%);
+  width: 14px;
+}
+.social .media {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.social .media:nth-child(1) {
+  padding-top: 15px;
+}
+.social .media:nth-last-child(1) {
+  padding-bottom: 15px;
+}
+.social .media img {
+  padding-right: 10px;
 }
 
-sidebar .card:nth-child(2){
-  flex: 2;
-}
+/* BIO */
 sidebar .card:nth-child(3){
   flex: 1;
 }
+.bio_text {
+  font-size: 10px;
+  padding: 15px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+
+
+
+
 sidebar .card:nth-child(4){
   flex: 3;
 }
@@ -99,5 +142,5 @@ footer {
   flex: 1;
   justify-content: center;
   align-items: center;
-  border: 1px dotted red;
+  font-size: 12px;
 }
