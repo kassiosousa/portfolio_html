@@ -39,15 +39,49 @@
           Co-founder at OPS GAME STUDIO in 2018, which its a company with focus to develop games to market demand and provide outsourcing.
         </div>
       </div>
-      <div class="card abilities"> Habilidades </div>
-      <div class="card education"> Formação </div>
     </sidebar>
 
     <container>
-      <div class="card title">Experience</div>
-      <div class="card experience"> Experiencia </div>
-      <div class="card title">Projects</div>
-      <div class="card">Content 4</div>
+      <div class="card title">
+        <div class="title_text">Education</div>
+        <div class="title_icon">See All <img class="icon" src="favicons/folder.svg"></div>
+      </div>
+      <div class="education">
+        <div class="card education_card">
+          <h5>Computer Science Bachelor</h5>
+          <div class="institute">UFMA</div>
+          <div class="year"><img class="icon" src="favicons/briefcase.svg"> 2015</div>
+        </div>
+        <div class="card education_card">
+          <h5>Game Developer MBA</h5>
+          <div class="institute">UNIFACS</div>
+          <div class="year"><img class="icon" src="favicons/briefcase.svg"> 2021-Progress</div>
+        </div>
+      </div>
+
+      <div class="card title">
+        <div class="title_text">Experience</div>
+        <div class="title_icon">See All <img class="icon" src="favicons/folder.svg"></div>
+      </div>
+      <div class="card experience">
+          <div class="experience_card">
+            <h5>Computer Science Bachelor</h5>
+            <div class="year">2015</div>
+            <div class="description">texto texto texto texto texto </div>
+            <div class="technologies">
+              <div class="tech">HTML</div>
+              <div class="tech">CSS</div>
+              <div class="tech">PHP</div>
+            </div>
+          </div>
+      </div>
+
+      <div class="card title">
+        <div class="title_text">Projects</div>
+        <div class="title_icon">See All <img class="icon" src="favicons/folder.svg"></div>
+      </div>
+      <div class="card">Projetos</div>
+
     </container>
 
 
