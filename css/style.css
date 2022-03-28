@@ -36,7 +36,7 @@ sidebar {
 sidebar .card {
   background: #302F3D;
   border-radius: 20px;
-  width: 90vw;
+  width: 250px;
   margin: 5px;
   margin-top: 10px;
   text-align: center;
@@ -45,7 +45,6 @@ sidebar .card {
 /* PROFILE */
 sidebar .card:nth-child(1){
   margin-top: 20px;
-  flex: 1;
 }
 .profile img {
   width: 150px;
@@ -61,9 +60,6 @@ sidebar .card:nth-child(1){
   color: #aca9bb;
 }
 /* SOCIAL */
-sidebar .card:nth-child(2){
-  flex: 1;
-}
 .icon {
   filter: invert(99%) sepia(0%) saturate(170%) hue-rotate(292deg) brightness(118%) contrast(90%);
   width: 14px;
@@ -107,17 +103,31 @@ container {
 container .card {
   background: #302F3D;
   border-radius: 20px;
-  width: 90vw;
+  width: 250px;
   margin: 5px;
   margin-top: 10px;
   text-align: center;
   box-shadow: 10px 5px 5px #00000054;
 }
+container h5 {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+}
+container h5::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background: linear-gradient(89.97deg, #009688 0.03%, #4caf50 99.97%);
+  margin-right: 5px;
+}
 
 /* TITLE */
-container .card:nth-child(1){
-  flex: 1;
-}
 container .title {
   display: flex;
   justify-content: space-between;
@@ -128,10 +138,6 @@ container .title_text {
   padding: 5px;
   padding-left: 10px;
 }
-container .title_text .icon {
-
-}
-
 container .title_icon {
   display: flex;
   align-items: center;
@@ -146,13 +152,9 @@ container .title_icon img {
 }
 
 /* FORMATION */
-container .card:nth-child(2){
-  flex: 2;
-}
 container .education {
   display: flex;
   flex-direction: column;
-  flex: 1;
   gap: 5px;
 }
 container .education_card {
@@ -162,23 +164,9 @@ container .education_card {
   flex-basis: auto;
   gap: 5px;
 }
-container .education_card h5 {
-  flex-basis: 60%;
-  text-align: left;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding-left: 10px;
-}
-container .education_card h5::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 8px;
-  height: 12px;
-  background: linear-gradient(89.97deg, #009688 0.03%, #4caf50 99.97%);
-  left: 14px;
-}
 container .education_card .institute {
+  display: flex;
+  justify-content: flex-end;
   text-align: right;
   flex-basis: 30%;
   font-size: 10px;
@@ -194,25 +182,127 @@ container .education_card .year {
   text-align: left;
 }
 
-
-
-container .card:nth-child(3){
-  flex: 1;
+/* EXPERIENCE */
+container .experience {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-container .card:nth-child(4){
-  flex: 2;
+container .experience_card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-basis: auto;
+  gap: 5px;
+}
+container .experience_card h5 {
+  flex-basis: 60%;
+}
+container .experience_card .institute {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  flex-basis: 30%;
+  font-size: 10px;
+}
+container .experience_card .year {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-basis: 100%;
+  font-size: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+container .experience_card .description {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-basis: 100%;
+  font-size: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+container .experience_card .technologies {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-basis: 100%;
+  font-size: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+container .experience_card .tech {
+  background: #00ae74;
+  color: #000;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 8px;
 }
 
-
-
-
-
-@media (min-width: 1024px) {
-
-  body {
-    flex-direction: row;
-  }
-
+/* PROJECTS */
+container .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+container .project_card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-basis: auto;
+  gap: 5px;
+}
+container .project_card .project_img {
+  flex-basis: 25%;
+  border-radius: 50%;
+  width: 70px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+container .project_card .role {
+  text-align: left;
+  padding-left: 10px;
+  flex-basis: 45%;
+  font-size: 12px;
+}
+container .project_card .year {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-basis: 45%;
+  font-size: 12px;
+  text-align: left;
+}
+container .project_card .description {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-basis: 100%;
+  font-size: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+container .project_card .technologies {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-basis: 100%;
+  font-size: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+container .project_card .tech {
+  background: #00ae74;
+  color: #000;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 8px;
 }
 
 /* FOOTER */
@@ -220,8 +310,51 @@ footer {
   display: flex;
   margin-top: auto;
   height: 2rem;
-  flex: 1;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 10px;
+  flex: 1;
+}
+
+
+
+@media (min-width: 768px) {
+  body {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  sidebar {
+    align-items: flex-end;
+    flex: 1;
+  }
+  container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+    flex: 2;
+  }
+  container h5 {
+    flex-basis: 50%;
+  }
+  container .card {
+    width: 230px;
+  }
+  container .title, .education, .experience, .projects {
+    width: 750px;
+  }
+  container .education {
+    flex-direction: row;
+  }
+  container .experience {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  container .projects {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  footer {
+    flex-basis: 100%;
+  }
 }
